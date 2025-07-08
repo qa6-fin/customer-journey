@@ -1,0 +1,6 @@
+emiID,creditID,productID,leadID,customerID,principal,interest,panelty,amountPayable,openingBalance,closingBalance,dueDate,actualPaymentDate,delayDays,paneltyID,paymentID,brokenPeriodIntrest,status,amountRemains,amountRemainsInterest,amountRemainsPenalty,amountRemainsPanelity,amountRemainsBrokenPeriodIntrest,createdAt,updatedAt,iu_date,collectedAmount,PendingAmount,lastCollectedDate,accessAmount,paymentReceived,waive_off_amount,is_deleted
+1643,606,1,842613,748794,2463,103,1,2566,10000,7537,7/7/2025,7/10/2025 0:00,3,,,590,paid,0,0,0,,0,6/3/2025 11:31,6/3/2025 7:52,6/3/2025 13:22,,,,,2594,563,0
+1644,606,1,842613,748794,2488,78,0,2566,7537,5049,8/7/2025,6/3/2025 0:00,0,,,0,paid,0,0,0,,0,6/3/2025 11:31,6/3/2025 10:25,6/3/2025 15:55,,,,,2566,0,0
+1645,606,1,842613,748794,2513,53,0,2566,5049,2536,9/7/2025,6/3/2025 0:00,0,,,0,paid,0,0,0,,0,6/3/2025 11:31,6/3/2025 14:40,6/3/2025 20:10,,,,,2566,0,0
+1646,606,1,842613,748794,2536,29,0,2565,2536,0,10/7/2025,6/3/2025 0:00,0,,,0,partially-paid,1459,0,0,,0,6/3/2025 11:31,6/4/2025 7:11,6/4/2025 12:41,,,,,1106,0,1
+1647,606,1,842613,748794,1459,0,0,1459,0,0,6/4/2025,6/4/2025 7:11,0,0,0,0,paid,0,0,0,,0,6/4/2025 7:11,6/4/2025 7:11,6/4/2025 12:41,,,,0,2106,-647,0

@@ -1,0 +1,175 @@
+ @Test
+//    public void verifyAllPage() throws InterruptedException {
+//        loginPage.enterMobileNumber("9782967441");
+//        loginPage.clickGetOtp();
+//        Thread.sleep(5000); // Wait for OTP entry
+//        MySQLConnectionDemo mydb = new MySQLConnectionDemo();
+//        String otp = mydb.getOtpFromDB("9782967441");
+//        loginPage.enterOtp(otp);
+//        loginPage.clickVerify();
+//        Thread.sleep(20000); // Wait for get cash Page
+//        GetCash GetCash = new GetCash(driver);
+//        GetCash.clickGetCash();
+//        driver.get("https://demorf2.ramfincorp.co.in/loan-purpose");
+//        Thread.sleep(5000);
+//        LoanPurposePage loanPurpose = new LoanPurposePage(driver);
+//        loanPurpose.selectRandomLoanPurpose();
+////        Thread.sleep(5000);
+//        driver.get("https://demorf2.ramfincorp.co.in/enter-loan-amount");
+//        LoanAmountPage loanPage = new LoanAmountPage(driver);
+////        Thread.sleep(10000);
+//        loanPage.enterAmount("10000");
+//        loanPage.clickNext();
+//        Thread.sleep(10000);
+//        
+//        driver.get("https://demorf2.ramfincorp.co.in/gender");
+//        PersonalInfoPage personalInfo = new PersonalInfoPage(driver);
+//        personalInfo.SelectRandomGender();
+//        Thread.sleep(10000);
+//        driver.get("https://demorf2.ramfincorp.co.in/marital-status");
+//        personalInfo.selectRandomMaritalStatus();
+//        Thread.sleep(10000);
+//        driver.get("https:// demorf2.ramfincorp.co.in/highest-education");
+//        personalInfo.selectRandomEducation();
+//        
+//        Thread.sleep(5000);
+//        driver.get("https://demorf2.ramfincorp.co.in/employment-details");
+//        personalInfo.selectEmploymentStatus("salaried");
+//       
+//        Thread.sleep(5000);
+//        driver.get("https://demorf2.ramfincorp.co.in/payment-mode");
+//        personalInfo.selectPaymentMode();
+//   
+//        Thread.sleep(5000);
+//        driver.get("https://demorf2.ramfincorp.co.in/company-name");
+//        personalInfo.enterCompanyName("Ramfincorp");
+//        personalInfo.clickNext();
+//        
+//        Thread.sleep(10000);
+//        driver.get("https://demorf2.ramfincorp.co.in/industry");
+//        IndustryPage industryPage = new IndustryPage(driver);
+//        industryPage.SelectrandomIndustry();
+//        Thread.sleep(10000);
+//        driver.get("https://demorf2.ramfincorp.co.in/your-designation");
+//        industryPage.selectRandomDesignation();
+//        
+//        Thread.sleep(10000);
+//        driver.get("https://demorf2.ramfincorp.co.in/monthly-income");
+//        ProfessionalPage monthIncome = new ProfessionalPage(driver);
+//        monthIncome.MonthlyIncomePage("10000");
+//        monthIncome.clickNext();
+//        //Work Experience
+//        EmploymentDetails workexp = new EmploymentDetails(driver);
+//        workexp.WorkExperience();
+//        
+//        //salary page
+//        EmploymentDetails salaryDate = new EmploymentDetails(driver);
+//        salaryDate.selectRandomSalaryDate();
+//        
+//    }
+//    
+//} 
+
+//    
+//    @Test(priority = 2)
+//    public void invalidMobileNumberTest() {
+//        loginPage.enterMobileNumber("98643");
+//        loginPage.clickGetOtp();
+//        Assert.assertTrue(loginPage.getErrorMessage().contains("10 digit valid"));
+//    }
+//
+//    @Test(priority = 3)
+//    public void invalidOtpTest() throws InterruptedException {
+//        loginPage.enterMobileNumber("9782967441");
+//        loginPage.clickGetOtp();
+//        Thread.sleep(5000);
+////        loginPage.enterOtp("0000");
+//        loginPage.clickVerify();
+//        Assert.assertTrue(loginPage.getErrorMessage().contains("Incorrect OTP"));
+//    }
+//
+//    @Test(priority = 4)
+//    public void blankMobileNumberTest() {
+//        loginPage.enterMobileNumber("");
+//        loginPage.clickGetOtp();
+//        Assert.assertTrue(loginPage.getErrorMessage().toLowerCase().contains("required") ||
+//                          loginPage.getErrorMessage().toLowerCase().contains("valid"));
+//    }
+//
+//    @Test(priority = 5)
+//    public void blankOtpTest() throws InterruptedException {
+//        loginPage.enterMobileNumber("9782967441");
+//        loginPage.clickGetOtp();
+//        Thread.sleep(5000);
+////        loginPage.enterOtp("");
+//        loginPage.clickVerify();
+//        Assert.assertTrue(loginPage.getErrorMessage().toLowerCase().contains("required") ||
+//                          loginPage.getErrorMessage().toLowerCase().contains("otp"));
+//    }
+//    
+//    @Test(priority = 6)
+//    public void verifyKycScreenVisible() throws InterruptedException {
+//        loginPage.enterMobileNumber("9782967441");
+//        loginPage.clickGetOtp();
+//        Thread.sleep(20000); // Wait for OTP entry
+//        loginPage.clickVerify();
+//        Thread.sleep(20000); // Wait for get cash
+//        GetCash GetCash = new GetCash(driver);
+//        GetCash.clickGetCash();
+//        
+//        Thread.sleep(5000);
+//        driver.get("https://demorf2.ramfincorp.co.in/loan-purpose");
+//        LoanPurposePage loanPurpose = new LoanPurposePage(driver);
+//        loanPurpose.selectRandomLoanPurpose();
+//
+//		
+//		  Assert.assertTrue(GetCash.isNameFieldVisible(),
+//		 "Name field should be visible");
+//		  Assert.assertTrue(GetCash.isEmailFieldVisible(),
+//		  "Email field should be visible");
+//		  Assert.assertTrue(GetCash.isNextButtonEnabled(),
+//		  "Next button should be enabled");
+//		 
+//    }
+//
+//    @Test(priority = 7)
+//    public void verifyValidKycSubmission() throws InterruptedException {
+//        loginPage.enterMobileNumber("9782967441");
+//        loginPage.clickGetOtp();
+//        Thread.sleep(20000); // Wait for OTP entry
+//        loginPage.clickVerify();
+//
+//        GetCash GetCash = new GetCash(driver);
+//        GetCash.clickGetCash();
+//
+////        GetCash.enterName("Jyoti Kumari");
+////        GetCash.enterEmail("qa6@ramfincorp.com");
+////        GetCash.clickNext();
+////        
+////        Thread.sleep(5000);
+//        
+//
+//        // Add assert depending on the navigation result or URL change
+//        Assert.assertTrue(driver.getCurrentUrl().contains("next-step"), "Should navigate to next step");
+//    }
+//
+//    
+//    //AADHAAR VERIFICATION PAGE
+//    
+//    public void validAadhaarNum() throws InterruptedException {
+//    	loginPage.enterMobileNumber("9782967441");
+//    	loginPage.clickGetOtp();
+//    	Thread.sleep(20000);
+//    	loginPage.clickVerify();
+//    	
+//    	
+//    }
+//  //Loan Purpose Page
+//    @Test (priority = 10)
+//    public void loanPurpose() throws InterruptedException {
+//  
+//        LoanPurposePage loanPurpose = new LoanPurposePage(driver);
+//        loanPurpose.selectRandomLoanPurpose();
+//   
+//    	
+//    }
